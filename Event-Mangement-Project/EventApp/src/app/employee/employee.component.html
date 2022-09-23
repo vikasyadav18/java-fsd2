@@ -1,0 +1,141 @@
+<div class="jumbotron mt-4 p-5 text-white base rounded">
+  <div class="container my-5">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <h3>Employee Information</h3>
+        <div class="d-flex">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            (click)="clickAdd()"
+          >
+            Add Employee
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container my-5">
+    <table class="table base1 m-2 table-hover">
+      <thead style="background-color: aquamarine">
+        <tr>
+          <th>Id</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of employeeData">
+          <td>{{ v.id }}</td>
+          <td>{{ v.fname }}</td>
+          <td>{{ v.lname }}</td>
+          <td>{{ v.email }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-info"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              (click)="editButton(v)"
+            >
+              Edit
+            </button>
+            <button class="btn btn-danger mx-3" (click)="deleteEmployee(v)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" style="color: black">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fname"
+                placeholder="Enter Firstname"
+                formControlName="fname"
+              />
+            </div>
+
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lname"
+                placeholder="Enter Last name"
+                formControlName="lname"
+              />
+            </div>
+
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                formControlName="email"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            id="cancel"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button
+            type="button"
+            *ngIf="showAdd"
+            (click)="postEmployeeDetails()"
+            class="btn btn-primary"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            *ngIf="showUpdate"
+            (click)="updateEmployeeDetails()"
+            class="btn btn-primary"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

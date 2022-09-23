@@ -1,0 +1,68 @@
+<div *ngIf="!showAdmin">
+  <div class="jumbotron" style="margin: 45px">
+    <h2 style="text-align: center; padding-top: 5%">Admin</h2>
+    <p style="text-align: center">
+      Enter the Admin E-mail address and the password!
+    </p>
+    <form action="">
+      <div class="container">
+        <p style="text-align: center; padding-bottom: 20px">
+          E-mail
+          <input
+            type="text"
+            name="email"
+            placeholder="Confirm email address"
+            email
+            required
+            style="padding-right: 60px; margin-left: 35px"
+          />
+        </p>
+      </div>
+      <div class="container">
+        <p style="text-align: center">
+          Password
+          <input
+            type="text"
+            name="email"
+            placeholder="Password"
+            required
+            style="padding-right: 60px; margin-left: 15px"
+          />
+          <br />
+          <button
+            class="btn btn-primary"
+            style="margin-top: 20px"
+            (click)="clickLogin()"
+          >
+            Login
+          </button>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="container" *ngIf="showHome">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-tabs">
+        <li
+          role="presentation"
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <h5><a class="nav-link" routerLink="/">Home</a></h5>
+        </li>
+        <li>
+          <h5><a class="nav-link" routerLink="employee">Employee</a></h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
