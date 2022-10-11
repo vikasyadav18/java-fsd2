@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-11T13:26:09 IST" name="Default suite" finished-at="2022-10-11T13:27:29 IST" duration-ms="80087">
+    <groups>
+      <group name="Chrome">
+        <method signature="FlipkartLogin.cross_T1()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="cross_T1" class="com.simplilearn.demo.FlipkartLogin"/>
+        <method signature="FlipkartLogin.TitleTest_T2()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="TitleTest_T2" class="com.simplilearn.demo.FlipkartLogin"/>
+        <method signature="FlipkartLogin.MaxWindow_T3()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="MaxWindow_T3" class="com.simplilearn.demo.FlipkartLogin"/>
+        <method signature="FlipkartLogin.SendingQuerry_T4()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="SendingQuerry_T4" class="com.simplilearn.demo.FlipkartLogin"/>
+        <method signature="FlipkartLogin.Search_T5()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="Search_T5" class="com.simplilearn.demo.FlipkartLogin"/>
+        <method signature="FlipkartLogin.Scroll_T6()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" name="Scroll_T6" class="com.simplilearn.demo.FlipkartLogin"/>
+      </group> <!-- Chrome -->
+    </groups>
+    <test started-at="2022-10-11T13:26:09 IST" name="Default test" finished-at="2022-10-11T13:27:29 IST" duration-ms="80087">
+      <class name="com.simplilearn.demo.FlipkartLogin">
+        <test-method signature="initialization_T0()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:26:09 IST" name="initialization_T0" finished-at="2022-10-11T13:26:11 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization_T0 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:26:11 IST" name="afterMethod" finished-at="2022-10-11T13:26:14 IST" duration-ms="3010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="cross_T1()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:26:14 IST" name="cross_T1" finished-at="2022-10-11T13:27:11 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.initialization_T0" duration-ms="56497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cross_T1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:11 IST" name="afterMethod" finished-at="2022-10-11T13:27:14 IST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TitleTest_T2()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:14 IST" name="TitleTest_T2" finished-at="2022-10-11T13:27:14 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.cross_T1" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TitleTest_T2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:14 IST" name="afterMethod" finished-at="2022-10-11T13:27:17 IST" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="MaxWindow_T3()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:17 IST" name="MaxWindow_T3" finished-at="2022-10-11T13:27:17 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.TitleTest_T2" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MaxWindow_T3 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:17 IST" name="afterMethod" finished-at="2022-10-11T13:27:20 IST" duration-ms="3012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="SendingQuerry_T4()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:20 IST" name="SendingQuerry_T4" finished-at="2022-10-11T13:27:20 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.MaxWindow_T3" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendingQuerry_T4 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:20 IST" name="afterMethod" finished-at="2022-10-11T13:27:23 IST" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="Search_T5()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:23 IST" name="Search_T5" finished-at="2022-10-11T13:27:23 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.SendingQuerry_T4" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_T5 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:23 IST" name="afterMethod" finished-at="2022-10-11T13:27:26 IST" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="Scroll_T6()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:26 IST" name="Scroll_T6" finished-at="2022-10-11T13:27:26 IST" depends-on-methods="com.simplilearn.demo.FlipkartLogin.Search_T5" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scroll_T6 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:26 IST" name="afterMethod" finished-at="2022-10-11T13:27:29 IST" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="Message2()[pri:0, instance:com.simplilearn.demo.FlipkartLogin@1530c739]" started-at="2022-10-11T13:27:29 IST" name="Message2" finished-at="2022-10-11T13:27:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Message2 -->
+      </class> <!-- com.simplilearn.demo.FlipkartLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
